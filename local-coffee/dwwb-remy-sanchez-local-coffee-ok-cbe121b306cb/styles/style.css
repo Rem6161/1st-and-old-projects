@@ -1,0 +1,56 @@
+.nav-link, h1 {
+    color: #8F3A09;
+    font-weight: 720;
+}
+
+.nav-link:hover {
+    color: #4F2005;
+    text-underline-offset: 8px;
+    text-decoration: underline;
+}
+
+#nav-link-home {
+    font-weight: 880;
+}
+
+/* when the screen is wider than 768px, these effects will activate*/
+@media screen and (min-width: 768px) {
+    nav li {
+        margin: 42px;
+    }
+    nav img {
+        margin-left: 80px;
+    }
+    .nav-link {
+        font-size: 28px;
+    }
+    #nav-link-home {
+        font-size: 40px;
+    }
+    h1 {
+        padding-left: 40px;
+    }
+}
+
+#home-page h2 {
+    font-weight:750;
+}
+
+#home-page h2, p {
+    color: #9C8E84;
+}
+
+@media screen and (min-width: 768px) {
+    #home-page p {
+        font-size: 80px;
+        font-weight: 475;
+    }
+    #home-page h2 {
+        font-size: 120px;
+        margin-bottom: 80px;
+    }
+}
+
+#carousel h3 {
+    color: #000000;
+}

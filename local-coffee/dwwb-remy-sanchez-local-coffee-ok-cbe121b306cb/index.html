@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <title>Local Coffee</title>
+</head>
+
+<body>
+  <header>
+    <!--This navbar will be triggered/expanding when the screen is reaching 768px(navbar-expand-md)-->
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <!--the class container is activating the bootstrap functions-->
+      <div class="container-fluid">
+        <a class="navbar-brand ms-4" href="#home-page">
+          <img src="resources/images/coffee-logo.png" alt="Logo" height="150">
+          <h1>Coffee Shop</h1>
+        </a>
+        <!--navbar toggler is paired with the navbar expand function, it activates when the screen is inferior to 768px-->
+        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Justify-content-end will push the links on the right side of navbar.
+          Collapse and navbar collapse are hiding the content of links when the screen is below 768px
+          -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <!--fs-5 is used for font size and me-5 is putting a margin on right-->
+          <ul class="navbar-nav fs-5 me-5">
+            <!--ms-auto is pushing the links to the end of their parent-->
+            <li class="nav-item ms-auto">
+              <a class="nav-link" href="#about">About us</a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a class="nav-link" href="#contact">Contact us</a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a class="nav-link" id="nav-link-home" aria-current="page" href="#home-page">Home page</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+
+
+    <!--"align-items-center" is used to center items inside his container-->
+  <section id="home-page" class="d-flex align-items-center">
+    <!--the combinaison of autoplay, muted and loop are making the video looping endlessly-->
+    <!--the class="col-12" is instructing bootstrap to extend the video on 12 columns-->
+    <video autoplay muted loop class="col-12">
+      <source src="resources/videos/coffee-video.mp4">
+    </video>
+    <!--"position-absolute" is used to overlap the element of text and the element video-->
+    <div class="position-absolute text-center col-4 badge text-wrap">
+    <h2>Hello</h2>
+    <p>Welcome to the Coffee Shop</p>
+    </div>
+  </section>
+
+<section id="carousel">
+  <!--offset sets the first number of columns that the element is skipping, in this case the element will appear in the middle of the page-->
+  <div class="carousel slide col-md-6 offset-md-3 d-flex align-items-center" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="resources/images/coffee-shop-photo-1.jpg" class="w-100" alt="coffee-shop-photo-1">
+      </div>
+      <div class="carousel-item">
+        <img src="resources/images/coffee-shop-photo-2.jpg" class="w-100" alt="coffee-shop-photo-2">
+      </div>
+      <div class="carousel-item">
+        <img src="resources/images/coffee-shop-photo-3.jpg" class="w-100" alt="coffee-shop-photo-3">
+      </div>
+      <div class="carousel-item">
+        <img src="resources/images/coffee-shop-photo-4.jpg" class="w-100" alt="coffee-shop-photo-4">
+      </div>
+      <div class="carousel-item">
+        <img src="resources/images/coffee-shop-photo-5.jpg" class="w-100" alt="coffee-shop-photo-5">
+      </div>
+    </div>
+    <h3 class="position-absolute text-center col-12">pictures of our rooms</h3>
+  </div>
+</section>
+
+<section>
+  <form action="/ma-page-de-traitement" method="post">
+    <div id=formContact>
+    <ul>
+      <li>
+        <label for="name">Nom&nbsp;:</label>
+        <input type="text" id="name" name="user_name" />
+      </li>
+      <li>
+        <label for="mail">E-mail&nbsp;:</label>
+        <input type="email" onkeypress="getValueName()" id="mail" name="user_mail" />
+      </li>
+      <li>
+        <label for="msg">Message&nbsp;:</label>
+        <textarea id="msg" name="user_message"></textarea>
+      </li>
+    </ul>
+    </div>
+  </form>
+</section>
+
+
+
+
+
+
+  <!--Let the script just before closing body tag so bootstrap can work properly-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+  </script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

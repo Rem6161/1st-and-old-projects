@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>algo-classe</title>    
+</head>
+
+<body>
+    <button onclick="switchMode()">Switch Theme</button>
+    <h1>test</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima commodi adipisci exercitationem saepe eos
+        praesentium magnam corrupti architecto non harum numquam facilis facere laborum quia culpa ipsum velit,
+        voluptatum delectus.</p>
+    
+    
+        <div>
+            <div>
+                <label for="bg-light">Background color light</label>
+                <input type="color" name="bg-light" id="bg-light" value="#FFFFFF">
+            
+                <label for="text-light">Font color light</label>
+                <input type="color" name="text-light" id="text-light" value="#000000">
+            </div>
+            <div>
+                <label for="bg-dark">Background color dark</label>
+                <input type="color" name="bg-dark" id="bg-dark" value="#000000">
+                
+                <label for="text-dark">Font color dark</label>
+                <input type="color" name="text-dark" id="text-dark" value="#FFFFFF">
+            </div>
+        </div>
+
+    <div id="create-new-section">
+        <label for="title">title</label>
+        <input type="text" name="title" id="title">
+
+        <label for="text">text</label>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+
+        <label for="image">image</label>:
+        <input type="url" name="image" id="image">
+
+        <button onclick="createAndDisplayDiv()">Create Element</button>
+        <div id="current-div">
+        </div>
+    </div>
+
+    <div id="buying-list">
+        <ul>
+            <li>Coffee<button onclick="buyingProduct(0, 1)">Buy</button></li>
+            <li>Hot Chocolate<button onclick="buyingProduct(1, 5)">Buy</button></li>
+            <li>Tea<button onclick="buyingProduct(2, 4)">Buy</button></li>
+            <li>Water<button onclick="buyingProduct(3, 2)">Buy</button></li>
+        </ul>
+    </div>
+
+    <div>
+        <canvas id="buyingChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
