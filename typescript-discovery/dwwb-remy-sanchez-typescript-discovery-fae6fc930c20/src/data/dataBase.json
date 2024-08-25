@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "sushi@sushi.com",
+      "password": "SuShI"
+    },
+    {
+      "id": 2,
+      "email": "cookie@cookie.com",
+      "password": "cookie"
+    },
+    {
+      "id": 3,
+      "email": "pignouf@pignouf.com",
+      "password": "pignouf"
+    },
+    {
+      "id": 4,
+      "email": "email@email.com",
+      "password": "$2b$10$9Zy4p9AYxkJGIOymyMZ4CO6W8nDt1fl7LZJ5909t3/wL6PCnfuHiy"
+    }
+  ]
+}

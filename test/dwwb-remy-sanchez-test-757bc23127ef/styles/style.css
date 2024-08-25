@@ -1,0 +1,16 @@
+#main {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 3px solid black;
+}
+
+h1, p, img {
+    max-width: 100%;
+}
+
+#div1 {
+    max-width: 50%;
+}
+#div2 {
+    max-width: 50%;
+}

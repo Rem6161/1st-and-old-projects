@@ -1,0 +1,87 @@
+/*website background*/
+* {
+    background-color: rgb(52, 103, 132);
+}
+
+/*headers colors and dimensioning*/
+h1, h2, h3, h4 {
+    color: #0d1a1b;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*paragraphs characters color*/
+p, li{
+    color: #8CAFFF;
+
+}
+
+/*sections dimensioning and bordering*/
+head{
+    margin-bottom: 90px;
+}
+
+section {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border-style: inset;
+    }
+
+section p {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+
+section h2{
+    padding-left: 14px;
+}
+
+section h3{
+    padding-left: 14px;
+}
+
+section h4{
+    padding-left: 14px;
+}
+
+/*anchors characters colo*/
+a {
+    color: rgb(170, 170, 38);
+}
+
+/*characters dimensioning*/
+
+/*page title will appear in the middle of the screen*/
+h1{
+    font-size: 64px;
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+header p{
+    font-style: italic;
+}
+
+h2 {
+    font-size: 42px;
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+h3 {
+    font-size: 30px;
+    padding-bottom: 14px;
+}
+
+h4{
+    font-size: 26px;
+    padding-bottom: 14px;
+}
+
+p, li, ul, ol {
+    margin: 0; 
+    font-size: 12px;
+}

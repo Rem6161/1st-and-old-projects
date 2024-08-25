@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#mainSection {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border: solid;
+}
+
+
+#nextPlanet {
+    float: right;
+}
+
